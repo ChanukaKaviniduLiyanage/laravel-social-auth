@@ -12,7 +12,7 @@
         <h1 class="text-4xl font-bold mb-4 text-white" style="text-shadow: 0 2px 4px rgba(0,0,0,0.3);">
             Welcome
         </h1>
-        <p class="text-gray-300 mb-8">Sign in with Google to access your dashboard.</p>
+        <p class="text-gray-300 mb-8">Use your Google account to log in and view your dashboard.</p>
 
         <a href="{{ route('google.login') }}" 
            class="flex items-center justify-center gap-3 w-full bg-white/10 border border-white/20 text-white font-semibold py-3 px-6 rounded-xl shadow-lg transition-all duration-300 hover:bg-white/20">
