@@ -15,8 +15,6 @@ Route::get('/auth/google/callback', [GoogleController::class, 'handleGoogleCallb
 
 Route::get('/dashboard', [GoogleController::class, 'dashboard'])->name('dashboard');
 
-// Google OAuth & dashboard routes already added above
-
 Route::get('/calendar', [CalendarController::class, 'index'])->name('calendar');
 Route::get('/email', [EmailController::class, 'index'])->name('email');
 Route::get('/todos', [TasksController::class, 'index'])->name('todos');

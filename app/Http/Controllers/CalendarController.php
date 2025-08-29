@@ -27,11 +27,10 @@ class CalendarController extends Controller
         /** @var Calendar $service */
         $service = new Calendar($client);
 
-        // Fetch events with a max limit of 50
         $events = $service->events->listEvents('primary', [
             'maxResults' => 50,
             'orderBy' => 'startTime',
-            'singleEvents' => true, // ensures recurring events are expanded
+            'singleEvents' => true,
         ])->getItems();
 
         return view('calendar', compact('events'));
